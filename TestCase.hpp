@@ -35,7 +35,6 @@ class TestCase{
             return (*this);
         }
 
-      //  template <typename T>  TestCase& check_function ( ‫ (void* func, T x, T y){
           template <typename T, typename F > TestCase& check_function ( F fun, T x, int y){
            total++;
             if ((*fun)(x) == y){
