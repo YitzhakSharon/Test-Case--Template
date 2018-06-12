@@ -10,4 +10,5 @@ ostream& operator <<(ostream& os,  TestCase& a){
 void TestCase:: print(){
   os << nameOfCheck <<": " << failed << " failed, " <<passed << "  passed, " << total << " total" <<endl;
   cout<<(*this);
+  nameOfCheck="";
 }
