@@ -18,7 +18,7 @@ class TestCase{
             }
             else{
                 failed ++;
-                os << nameOfCheck << " Failure in test #" << total << ":" << x << " should equal " << y << "!" << endl;
+                os << nameOfCheck << ": Failure in test #" << total << ":" << x << " should equal " << y << "!" << endl;
             }
             return (*this);
         }
@@ -29,7 +29,7 @@ class TestCase{
                 passed ++;
             }
             else{
-                os << nameOfCheck << " Failure in test #" << total << ":" << x << " should different " << y << "!" <<endl;
+                os << nameOfCheck << ": Failure in test #" << total << ":" << x << " should different " << y << "!" <<endl;
                 failed ++;
             }
             return (*this);
@@ -42,7 +42,7 @@ class TestCase{
             }
             else{
                 failed ++;
-                os << nameOfCheck << " Failure in test #" << total << ": Function should return " << y << " but returned " << fun(x) << "!" <<endl;
+                os << nameOfCheck << ": Failure in test #" << total << ": Function should return " << y << " but returned " << fun(x) << "!" <<endl;
 
             }
             return (*this);
@@ -56,7 +56,7 @@ class TestCase{
             passed++;
           else{
             failed++;
-            os << nameOfCheck << " Failure in test #" << total << ": Function should return " << temp << " but returned " <<ss.str() << "!" <<endl;
+            os << nameOfCheck << ": Failure in test #" << total << ": Function should return " << temp << " but returned " <<ss.str() << "!" <<endl;
           }
           return (*this);
         }
