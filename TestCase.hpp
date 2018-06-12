@@ -37,7 +37,7 @@ class TestCase{
 
           template <typename T, typename F > TestCase& check_function ( F fun, T x, int y){
            total++;
-            if ((*fun)(x) == y){
+            if (fun(x) == y){
                 passed ++;
             }
             else{

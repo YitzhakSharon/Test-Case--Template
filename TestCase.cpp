@@ -8,7 +8,10 @@ ostream& operator <<(ostream& os,  TestCase& a){
 }
 
 void TestCase:: print(){
-  os << nameOfCheck <<": " << failed << " failed, " <<passed << "  passed, " << total << " total" <<endl;
+  os << nameOfCheck <<": " << failed << " failed, " <<passed << " passed, " << total << " total" <<endl;
   cout<<(*this);
   nameOfCheck="";
+  passed=0;
+  total=0;
+  failed=0;
 }
